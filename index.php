@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD wiele d0 wielu</title>
+    <title>Rafał_Bakowski</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<left-side>
+
 
 <form action="insert.php" method="POST">
 name:
@@ -15,6 +17,8 @@ tytul:
 <input type="text" name="tytul" ><br/>
 <input type="submit" value="dodaj">
 </form>
+</left-side>
+<right-side>
     <?php
 
     $servername="localhost";
@@ -43,6 +47,7 @@ tytul:
      };
     echo("</table>");
     ?>
+    </right-side>
 </body>
 <script src="main.js"></script>
 </html>
