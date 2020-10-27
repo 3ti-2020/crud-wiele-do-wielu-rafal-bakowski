@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD wiele do wielu</title>
+    <title>CRUD wiele d0 wielu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<form action="insert.php" method="POST">
+name:
+<input type="text" name="name" ><br/>
+tytul:
+<input type="text" name="tytul" ><br/>
+<input type="submit" value="dodaj">
+</form>
     <?php
 
     $servername="localhost";
@@ -16,6 +24,8 @@
 
     $conn= new mysqli($servername,$username,$password,$dbname);
     $result=$conn->query("SELECT * FROM ksiazki");
+
+    
 
     echo("<table class='table'>");
     echo("<tr>
