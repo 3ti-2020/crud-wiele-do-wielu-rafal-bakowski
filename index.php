@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafał_Bakowski</title>
+    <title>Rafał_Bakowski gr2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +16,7 @@ name:
 <input type="submit" value="dodaj">
 </form>
 
-
+<br/><br><br/>
 <form action="insert_tytul.php" method="POST">
 tytul:
 <input type="text" name="tytul" ><br/>

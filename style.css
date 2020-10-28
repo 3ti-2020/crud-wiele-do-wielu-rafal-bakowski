@@ -32,5 +32,9 @@ right-side{
 
 tr{
     background-color: gold;
-    
+
+}
+
+td:hover{
+    background-color: goldenrod;
 }
