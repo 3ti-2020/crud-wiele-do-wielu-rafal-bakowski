@@ -25,3 +25,12 @@ right-side{
     align-items: center;
 }
 
+.table{
+    background-color: indigo;
+    border: solid 3px black;
+}
+
+tr{
+    background-color: gold;
+    
+}

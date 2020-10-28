@@ -13,10 +13,16 @@
 <form action="insert.php" method="POST">
 name:
 <input type="text" name="name" ><br/>
+<input type="submit" value="dodaj">
+</form>
+
+
+<form action="insert_tytul.php" method="POST">
 tytul:
 <input type="text" name="tytul" ><br/>
 <input type="submit" value="dodaj">
 </form>
+
 </left-side>
 <right-side>
     <?php
