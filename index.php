@@ -21,13 +21,20 @@ tytul:
 <right-side>
     <?php
 
-    $servername="localhost";
-    $username="root";
-    $password="";
-    $dbname="dom";
+    // $servername="localhost";
+    // $username="root";
+    // $password="";
+    // $dbname="dom";
+
+     $servername="sql7.freemysqlhosting.net";
+     $username="sql7373159";
+     $password="WwcDU7gMfM";
+     $dbname="sql7373159";
+
+
 
     $conn= new mysqli($servername,$username,$password,$dbname);
-    $result=$conn->query("SELECT * FROM ksiazki");
+    $result=$conn->query("SELECT id_autor_tytul, name, tytul FROM lib_tyt, lib_aut_tyt, lib_autor WHERE lib_autor.id_autor=lib_aut_tyt.id_autor AND lib_tyt.id_tytul=lib_aut_tyt.id_tytul");
 
     
 
