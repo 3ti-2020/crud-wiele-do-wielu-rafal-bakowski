@@ -35,6 +35,6 @@ tr{
 
 }
 
-td:hover{
+tr:hover{
     background-color: goldenrod;
 }
