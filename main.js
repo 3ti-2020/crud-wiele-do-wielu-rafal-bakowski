@@ -1,1 +1,1 @@
-echo("Witaj świecie");
+console.log("Witaj swiecie");
