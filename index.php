@@ -10,18 +10,16 @@
 <left-side>
 
 
-<form action="insert.php" method="POST">
-name:
-<input type="text" name="name" ><br/>
-<input type="submit" value="dodaj">
-</form>
+<form class="form" action="insert.php" method="POST">
+    
+    <input class="text" type="text" name="nazwisko" placeholder="nazwisko"></br>
+    
+    <input class="text" type="text" name="tytul" placeholder="tytul"></br>
 
-<br/><br><br/>
-<form action="insert_tytul.php" method="POST">
-tytul:
-<input type="text" name="tytul" ><br/>
-<input type="submit" value="dodaj">
-</form>
+    
+
+    <input class="button" type="submit" value="Dodaj">
+    </form>
 
 </left-side>
 <right-side>
@@ -46,9 +44,10 @@ $result=$conn->query("SELECT id_autor_tytul, name, tytul FROM lib_tyt, lib_aut_t
 
     echo("<table class='table'>");
     echo("<tr>
-    <th>id_autor_tytul</th>
-    <th>name</th>
-    <th>tytul</th>
+    <th>Id_autor_tytul</th>
+    <th>Nazwisko</th>
+    <th>Tytul</th>
+    <th>Usuń</th>
 </tr>");
 
      while($wiersz=$result->fetch_assoc()){
@@ -56,6 +55,9 @@ $result=$conn->query("SELECT id_autor_tytul, name, tytul FROM lib_tyt, lib_aut_t
        echo("<td>".$wiersz['id_autor_tytul']."</td>");
        echo("<td>".$wiersz['name']."</td>");
        echo("<td>".$wiersz['tytul']."</td>");
+       echo("<td class='td'>  <form class='form' action='delete.php' method='POST'>
+       <input class='text' type='hidden' name='ID' value='$row[id_autor_tytul]' placeholder='ID'></br>
+    <input class='buttona' type='submit' value='Usun'> </td>");
        echo("</tr>");
      };
     echo("</table>");
