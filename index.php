@@ -17,7 +17,7 @@ width="150px" height="70px"></a> link do kart w obrazku wyzej
 <left-side>
 
 
-<form class="form" action="insert.php" method="POST">
+<form class="form" action="insert.php" method="POST" autocomplete="off">
     
     <input class="placeholder" type="text" name="nazwisko" placeholder="nazwisko"></br>
     
