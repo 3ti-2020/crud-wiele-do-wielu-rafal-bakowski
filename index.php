@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+<h2>Wykonawca:</h2>
+<p class="podpis">Rafał Bakowski grupa:  2</p>
+
+    </nav>
 <left-side>
 
 
 <form class="form" action="insert.php" method="POST">
     
-    <input class="text" type="text" name="nazwisko" placeholder="nazwisko"></br>
+    <input class="placeholder" type="text" name="nazwisko" placeholder="nazwisko"></br>
     
-    <input class="text" type="text" name="tytul" placeholder="tytul"></br>
+    <input class="placeholder" type="text" name="tytul" placeholder="tytul"></br>
 
     
 
@@ -57,7 +62,7 @@ $result=$conn->query("SELECT id_autor_tytul, name, tytul FROM lib_tyt, lib_aut_t
        echo("<td>".$wiersz['tytul']."</td>");
        echo("<td class='td'>  <form class='form' action='delete.php' method='POST'>
        <input class='text' type='hidden'  name='ID' value='$wiersz[id_autor_tytul]' placeholder='ID'></br>
-    <input class='buttona' type='submit' value='Usun'> </td>");
+    <input class='button_del' type='submit' value='Usun'> </td>");
        echo("</tr>");
      };
     echo("</table>");
