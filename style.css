@@ -39,45 +39,6 @@ tr:hover{
     background-color: goldenrod;
 }
 
-.text{
-    background: none;
-    border: none;
-    outline: none;
-    border-bottom: 3px solid lightgreen;
-    padding: 5px;
-    margin: 15px;
-    font-size: 20px;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none
-}
-
-.button{
-
-    background: none;
-    border: none;
-    outline: none;
-    background-color: lightgreen;
-    padding: 15px;
-    font-size: 20px;
-    width: 300px;
-    border-radius: 10px;
-    transition: 0.3s;
-    height: 50px;
-
-}
-
-.buttona{
-
-    background: none;
-    border: none;
-    outline: none;
-    background-color: lightgreen;
-    padding: 15px;
-    font-size: 20px;
-    width: 100px;
-    border-radius: 10px;
-    transition: 0.3s;
 
 
-}
+

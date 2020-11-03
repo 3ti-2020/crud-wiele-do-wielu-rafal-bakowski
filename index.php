@@ -56,7 +56,7 @@ $result=$conn->query("SELECT id_autor_tytul, name, tytul FROM lib_tyt, lib_aut_t
        echo("<td>".$wiersz['name']."</td>");
        echo("<td>".$wiersz['tytul']."</td>");
        echo("<td class='td'>  <form class='form' action='delete.php' method='POST'>
-       <input class='text' type='hidden' name='ID' value='$row[id_autor_tytul]' placeholder='ID'></br>
+       <input class='text' type='hidden'  name='ID' value='$wiersz[id_autor_tytul]' placeholder='ID'></br>
     <input class='buttona' type='submit' value='Usun'> </td>");
        echo("</tr>");
      };
