@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "nav right-side right-side"
+    "left-side right-side right-side"
+    "left-side right-side right-side";
+    background:sandybrown;
+}
+
+left-side{
+    grid-area: left-side;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    
+}
+
+left-side:hover{
+    grid-area: left-side;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 90px;
+    transition: 1s;
+    border: darkred solid 2px;
+}
+
+right-side{
+    grid-area: right-side;
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    grid-area: nav;
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: wheat;
+    border: darkred solid 3px;
+
+}
+.podpis{
+    position: relative;
+    top: -32px;
+    color:darkred;
+}
+
+.table{
+    background-color: indigo;
+    border: solid 3px black;
+}
+
+tr{
+    background-color: gold;
+
+}
+
+tr:hover{
+    background-color: goldenrod;
+}
+
+.placeholder{
+    margin: 10px;
+}
+
+.button{
+    position: relative;
+    left: 70px;
+    border-radius: 20px;
+    background: darkmagenta;
+    color: wheat;
+    border: darkred 2px solid;
+    width: 70px;
+    height: 30px;
+}
+
+.button_del{
+    border-radius: 20px;
+    background: darkmagenta;
+    color: wheat;
+    border: darkred 2px solid;
+    width: 50px;
+    height: 30px;
+}
+
+td{
+    text-align: center;
+    text-justify: center;
+    color: darkred;
+    width: 120px;
+    height: 80px;
+}
+
