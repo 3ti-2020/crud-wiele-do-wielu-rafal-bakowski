@@ -17,4 +17,4 @@ $sql="DELETE FROM `lib_aut_tyt` WHERE `lib_aut_tyt`.`id_autor_tytul` = '".$_POST
 
 mysqli_query($conn, $sql);
 
-header("Location:index.php");
+header("Location:indx.php");
