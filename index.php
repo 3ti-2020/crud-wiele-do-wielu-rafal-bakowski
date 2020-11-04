@@ -8,11 +8,15 @@
 </head>
 <body>
     <nav>
+    <div class="navlewo">
 <h2>Wykonawca:</h2>
 <p class="podpis">Rafał Bakowski grupa:  2</p>
 <a href="karta/cards.php"> <img src="https://sklep.orimed.pl/img/cms/karty.png"
 width="150px" height="70px"></a> link do kart w obrazku wyzej 
-
+</div>
+<div class="navprawo">
+<button class="zmiana_koloru" type="button" >Zmiana koloru diva</button>
+</div>
     </nav>
 <left-side>
 
@@ -37,10 +41,10 @@ width="150px" height="70px"></a> link do kart w obrazku wyzej
 //  $password="";
 // $dbname="dom";
 
-$servername="sql7.freemysqlhosting.net";
-$username="sql7373159";
-$password="WwcDU7gMfM";
-$dbname="sql7373159";
+$servername="mysql-rafal001558.alwaysdata.net";
+$username="217038";
+$password="zaq1@WSX";
+$dbname="rafal001558_dom";
 
 
 
@@ -70,6 +74,7 @@ $result=$conn->query("SELECT id_autor_tytul, name, tytul FROM lib_tyt, lib_aut_t
     echo("</table>");
 ?>
     </right-side>
+    
 </body>
 <script src="main.js"></script>
 </html>

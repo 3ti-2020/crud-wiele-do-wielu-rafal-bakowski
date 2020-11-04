@@ -8,7 +8,7 @@ body{
     grid-template-areas: "nav right-side right-side"
     "left-side right-side right-side"
     "left-side right-side right-side";
-    background:sandybrown;
+    background: lightcoral
 }
 
 left-side{
@@ -45,13 +45,9 @@ right-side{
 
 nav{
     grid-area: nav;
-    background-color: chocolate;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    color: wheat;
-    border: darkred solid 3px;
+    flex-wrap: nowrap;
+   
 
 }
 .podpis{
@@ -105,4 +101,36 @@ td{
     width: 120px;
     height: 80px;
 }
+.navlewo{
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border: 3px solid darkred;
+}
 
+.navprawo{
+
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+}
+.zmiana_koloru{
+    padding: 10px;
+    border: solid 3px wheat;
+    border-radius: 8px;
+    color: wheat;
+    background: rgba(0,0,0,0.6);
+    font-size: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    outline: none;
+}
+
+.zmiana_koloru:hover{
+    background: rgb(0,0,0);
+}
