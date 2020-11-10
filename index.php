@@ -6,7 +6,7 @@
     <title>Rafał_Bakowski gr2</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="body1">
     <nav>
     <div class="navlewo">
 <h2>Wykonawca:</h2>
@@ -34,6 +34,8 @@ width="150px" height="70px"></a> link do kart w obrazku wyzej
 
 </left-side>
 <right-side>
+
+
 <?php
 
 //  $servername="localhost";
@@ -72,8 +74,46 @@ $result=$conn->query("SELECT id_autor_tytul, name, tytul FROM lib_tyt, lib_aut_t
        echo("</tr>");
      };
     echo("</table>");
-?>
-    </right-side>
+    ?>
+   </right-side>
+    
+<aside>
+
+
+ <?php
+$servername="mysql-rafal001558.alwaysdata.net";
+$username="217038";
+$password="zaq1@WSX";
+$dbname="rafal001558_dom";
+
+
+
+$conn= new mysqli($servername,$username,$password,$dbname);
+    $result=$conn->query("SELECT lib_tyt.tytul, users.username, lib_wyp.data_wyp, lib_wyp.data_zwrot FROM lib_tyt, users, lib_wyp WHERE lib_tyt.id_tytul=lib_wyp.id_book AND users.id_user=lib_wyp.id_user");
+
+    
+
+    echo("<table class='table'>");
+    echo("<tr>
+    <th>Tytul</th>
+    <th>User</th>
+    <th>data_wyp</th>
+    <th>data_zwrot</th>
+</tr>");
+
+     while($wiersz=$result->fetch_assoc()){
+       echo("<tr>");
+       echo("<td>".$wiersz['tytul']."</td>");
+       echo("<td>".$wiersz['username']."</td>");
+       echo("<td>".$wiersz['data_wyp']."</td>");
+       echo("<td>".$wiersz['data_zwrot']."</td>");
+       
+       echo("</tr>");
+     };
+    echo("</table>");
+    ?> 
+    
+</aside>
     
 </body>
 <script src="main.js"></script>

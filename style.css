@@ -1,13 +1,13 @@
-body{
+.body1{
     margin: 0;
     padding: 0;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "nav right-side right-side"
-    "left-side right-side right-side"
-    "left-side right-side right-side";
+    grid-template-areas: "nav right-sde right-side"
+    "left-side aside aside"
+    "left-side aside aside";
     background: lightcoral
 }
 
@@ -38,6 +38,16 @@ left-side:hover{
 right-side{
     grid-area: right-side;
     background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+   
+}
+
+aside{
+    grid-area: aside;
+    background-color: darkorchid;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,4 +143,12 @@ td{
 
 .zmiana_koloru:hover{
     background: rgb(0,0,0);
+}
+
+.tab1{
+    display: flex;
+}
+
+.tab2{
+    display: flex;
 }
