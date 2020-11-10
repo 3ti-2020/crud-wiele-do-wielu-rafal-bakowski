@@ -46,6 +46,8 @@ if(isset($_SESSION['logged']))
         <label for="password">Hasło:</label>
         <input type="password" name="password">
         <input type="submit" value="Zaloguj ">
+        <p>Login:a</p>
+        <p>Hasło:a</p>
         <?php
         if(isset($error) && $error = true){
             echo "<span class='error'>Spróbuj ponownie sie zalogować</span>";
