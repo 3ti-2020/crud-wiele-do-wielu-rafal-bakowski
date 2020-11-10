@@ -1,14 +1,14 @@
-.body1{
+body{
     margin: 0;
     padding: 0;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "nav right-sde right-side"
-    "left-side aside aside"
-    "left-side aside aside";
-    background: lightcoral
+    grid-template-areas: "nav right-side right-side"
+    "left-side right-side right-side"
+    "left-side right-side right-side";
+    background: lightcoral;
 }
 
 left-side{
@@ -41,17 +41,13 @@ right-side{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    overflow: scroll;
 }
    
-}
 
-aside{
-    grid-area: aside;
-    background-color: darkorchid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+
 
 nav{
     grid-area: nav;
@@ -69,6 +65,7 @@ nav{
 .table{
     background-color: indigo;
     border: solid 3px black;
+    
 }
 
 tr{
@@ -145,10 +142,4 @@ td{
     background: rgb(0,0,0);
 }
 
-.tab1{
-    display: flex;
-}
 
-.tab2{
-    display: flex;
-}

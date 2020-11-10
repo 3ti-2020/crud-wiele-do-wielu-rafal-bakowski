@@ -6,7 +6,7 @@
     <title>Rafał_Bakowski gr2</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="body1">
+<body>
     <nav>
     <div class="navlewo">
 <h2>Wykonawca:</h2>
@@ -74,21 +74,13 @@ $result=$conn->query("SELECT id_autor_tytul, name, tytul FROM lib_tyt, lib_aut_t
        echo("</tr>");
      };
     echo("</table>");
-    ?>
-   </right-side>
+   
+  
     
-<aside>
-
-
- <?php
-$servername="mysql-rafal001558.alwaysdata.net";
-$username="217038";
-$password="zaq1@WSX";
-$dbname="rafal001558_dom";
 
 
 
-$conn= new mysqli($servername,$username,$password,$dbname);
+
     $result=$conn->query("SELECT lib_tyt.tytul, users.username, lib_wyp.data_wyp, lib_wyp.data_zwrot FROM lib_tyt, users, lib_wyp WHERE lib_tyt.id_tytul=lib_wyp.id_book AND users.id_user=lib_wyp.id_user");
 
     
@@ -111,9 +103,9 @@ $conn= new mysqli($servername,$username,$password,$dbname);
        echo("</tr>");
      };
     echo("</table>");
-    ?> 
-    
-</aside>
+
+     ?>
+ </right-side>
     
 </body>
 <script src="main.js"></script>
