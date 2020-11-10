@@ -20,7 +20,7 @@ width="150px" height="70px"></a> link do kart w obrazku wyzej
     </nav>
 <left-side>
 
-
+<h3>DODAJ KSIĄŻKĘ:</h3>
 <form class="form" action="insert.php" method="POST" autocomplete="off">
     
     <input class="placeholder" type="text" name="nazwisko" placeholder="nazwisko"></br>
@@ -30,6 +30,16 @@ width="150px" height="70px"></a> link do kart w obrazku wyzej
     
 
     <input class="button" type="submit" value="Dodaj">
+
+
+    </form>
+    <h3>WYPOŻYCZ KSIĄŻKĘ:</h3>
+    <form class="form" action="insert_wyp.php" method="POST" autocomplete="off">
+    <input class="placeholder" type="text" name="tytul" placeholder="tytul"></br>
+    
+    <input class="placeholder" type="text" name="user" placeholder="user"></br>
+
+    <input class="button" type="submit" value="Wypożycz">
     </form>
 
 </left-side>
@@ -78,7 +88,7 @@ $result=$conn->query("SELECT id_autor_tytul, name, tytul FROM lib_tyt, lib_aut_t
   
     
 
-
+echo("<br/><br/>");
 
 
     $result=$conn->query("SELECT lib_tyt.tytul, users.username, lib_wyp.data_wyp, lib_wyp.data_zwrot FROM lib_tyt, users, lib_wyp WHERE lib_tyt.id_tytul=lib_wyp.id_book AND users.id_user=lib_wyp.id_user");
