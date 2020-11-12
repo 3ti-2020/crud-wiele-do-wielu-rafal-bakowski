@@ -12,7 +12,7 @@
 <h2>Wykonawca:</h2>
 <p class="podpis">Rafał Bakowski grupa:  2</p>
 <a href="karta/cards.php"> <img src="https://sklep.orimed.pl/img/cms/karty.png"
-width="150px" height="70px"></a> link do kart w obrazku wyzej 
+width="150px" height="71px"></a> link do kart w obrazku wyzej 
 </div>
 <div class="navprawo">
 <button class="zmiana_koloru" type="button" >Zmiana koloru diva</button>
