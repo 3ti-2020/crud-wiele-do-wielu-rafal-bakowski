@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafał_Bakowski gr2</title>
+    <title>Rafal_Bakowski gr2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
     <div class="navlewo">
-<h2>Wykonawca:</h2>
+<h2>Wykonawca :</h2>
 <p class="podpis">Rafał Bakowski grupa:  2</p>
 <a href="karta/cards.php"> <img src="https://sklep.orimed.pl/img/cms/karty.png"
 width="150px" height="71px"></a> link do kart w obrazku wyzej 
