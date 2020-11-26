@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Lista RAFAŁ BAKOWSKI</title>
+        
+        <link rel="stylesheet" href="lis.css">
+        
+    </head>
+    <body>
+        <div class="cnt">
+            <form class="form" id="Form">
+                <div class="form-row">
+                   Wpisz coś do listy: </br>
+                        <textarea class="form-message" name="todoMessage" id="todoMessage"></textarea>
+                </div> 
+                
+                <div class="form-row">
+                    <button type="submit" class="button form-button">Dodaj</button>
+                </div>
+            </form>
+
+            <section class="list-cnt">
+                <header class="list-header">
+                    <h2 class="list-title">
+                        Lista :
+                    </h2>
+
+                    
+                    
+                </header>
+
+                <div class="list" id="List">
+                </div>
+            </section>
+        </div>
+
+        <template id="elementTemplate">
+            <div class="element-bar">
+                <h3 class="element-date"></h3>
+               
+              <p>  <button class="element-delete" title="Usuń task">
+                   Delete
+                </button>
+                
+            </div>
+            <div class="element-text">
+                
+            </div>
+        </p>
+            
+        </template>
+        
+    </body>
+    <script src="lis.js"></script>
+</html>
