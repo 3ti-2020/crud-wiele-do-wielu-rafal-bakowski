@@ -6,3 +6,39 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.element-delete{
+    border-radius: 10px;
+    background: darkmagenta;
+    color: wheat;
+    border: darkred 2px solid;
+    width: 50px;
+    height: 30px;
+}
+
+button{
+    border-radius: 10px;
+    background: darkmagenta;
+    color: wheat;
+    border: darkred 2px solid;
+    width: 50px;
+    height: 30px;
+}
+
+button:hover{
+    border-radius: 20px;
+    background: darkmagenta;
+    color: wheat;
+    border: darkred 2px solid;
+    width: 50px;
+    height: 30px;
+}
+
+h2{
+    color: brown;
+}
+
+.form-row{
+    color: brown;
+    font-size: xx-large;
+}
