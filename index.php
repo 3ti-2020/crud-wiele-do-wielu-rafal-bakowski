@@ -10,6 +10,7 @@
     <nav>
     <div class="navlewo">
         <a href="lista.html">LISTA </a>
+        <a href="pytania.html">PYTANIA_EGZAMIN</a>
 <h2>Wykonawca :</h2>
 <p class="podpis">Rafał Bakowski grupa:  2</p>
 <a href="karta/cards.php"> <img src="https://sklep.orimed.pl/img/cms/karty.png"

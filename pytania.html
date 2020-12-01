@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pytania Egzamin</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: lightslategrey;
+            color:darkmagenta;
+            display: grid;
+            height: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 10fr;
+            grid-template-areas: "header"
+            "main";
+        }
+
+        header{
+            grid-area: header;
+            background-color: darkorange;
+        }
+
+        main{
+            grid-area: main;
+        }
+        .poprawna{
+            color: green;
+        }
+        a{
+            color: red;
+            border: solid 2px red;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <a href="index.php">powrót</a>
+        </header>
+        <main>
+            <h1>ZAD.1 Aby odebrać uprawnienia użytkownikowi, należy zastosować polecenie</h1>
+            <p>A. GRANT NO PRIVILEGES</p>
+            <p>B. DELETE PRIVILEGES</p>
+            <p>C. REVOKE</p>
+            <p>D. DELETE</p>
+            <p class="poprawna">POPRAWNA ODP: C</p>
+
+            <h1>ZAD.2 Język HTML dysponuje nagłówkami do budowania hierarchii treści. Nagłówki te występują jedynie w zakresie</h1>
+            <p>A. h1 - h8</p>
+            <p>B. h1 - h6</p>
+            <p>C. h1 - h10</p>
+            <p>D. h1 - h4</p>
+            <p class="poprawna">POPRAWNA ODP: B</p>
+
+            <h1>ZAD.3 ....</h1>
+            <p>A. </p>
+            <p>B. </p>
+            <p>C. </p>
+            <p>D. </p>
+            <p class="poprawna">POPRAWNA ODP: </p>
+        </main>
+    </div>
+</body>
+</html>
